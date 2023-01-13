@@ -7,7 +7,6 @@ import (
 )
 
 type User struct {
-	// gorm.Model
 	Id        int            `json:"id" gorm:"column:id;primary_key"`
 	Username  string         `json:"username" gorm:"column:username;unique;not null"`
 	Email     string         `json:"email" gorm:"column:email;unique;not null"`

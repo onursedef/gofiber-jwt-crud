@@ -8,7 +8,6 @@ import (
 )
 
 type Post struct {
-	// gorm.Model
 	ID        int            `json:"id" gorm:"primaryKey"`
 	Title     string         `json:"title" gorm:"column:title"`
 	Slug      string         `json:"slug" gorm:"column:slug"`
